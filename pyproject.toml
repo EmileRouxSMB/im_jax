@@ -1,0 +1,22 @@
+[project]
+name = "im_jax"
+version = "0.1.0"
+description = "JAX image interpolation utilities"
+readme = "readme.md"
+requires-python = ">=3.9"
+dependencies = [
+  "jax",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["im_jax"]
+package-dir = { "im_jax" = "." }
