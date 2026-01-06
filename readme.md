@@ -13,7 +13,12 @@ keeps shapes and dtypes stable across `jit`, `vmap`, and `grad`.
 ## Installation
 
 ```bash
-pip install -e .
+pip install im_jax
+```
+
+For development:
+```bash
+pip install -e ".[dev]"
 ```
 
 ## Usage
@@ -37,6 +42,13 @@ runtime measurements.
 ```bash
 pytest
 ```
+
+## Release / PyPI
+
+This project is published to PyPI automatically from GitHub tags.
+
+- Create a tag like `v0.1.0` and push it.
+- GitHub Actions builds and publishes the release to PyPI.
 
 ## License
 
